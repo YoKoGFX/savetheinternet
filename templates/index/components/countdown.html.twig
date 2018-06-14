@@ -9,8 +9,14 @@
             <div class="col-12 col-lg-6 timer d-flex">
                 <div class="countdown-output">
                     <div class="ccount d-flex">
-                        <p class="days"><span class="cdays">0</span> <span class="ndays">{% trans %}days{% endtrans %}</span></p>
-                        <p class="hours"><span class="chours">0</span> <span class="nhours">{% trans %}hours{% endtrans %}</span></p>
+                        <p class="days"><span class="cdays">0</span> <span class="ndays">
+                            <span class="countdown-days">{% trans %}days{% endtrans %}</span>
+                            <span class="countdown-day">{% trans %}days{% endtrans %}</span>
+                        </span></p>
+                        <p class="hours"><span class="chours">0</span> <span class="nhours">
+                            <span class="countdown-hours">{% trans %}hours{% endtrans %}</span>
+                            <span class="countdown-hour">{% trans %}hour{% endtrans %}</span>
+                        </span></p>
                     </div>
                     <!--<div class="cexpired">
                         {% trans %}countdown_expired{% endtrans %}.

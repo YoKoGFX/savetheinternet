@@ -1,7 +1,8 @@
 # Global
-day: 'DE Tag'
-days: 'DE Tage'
-hours: 'DE Stunden'
+day: 'Tag'
+days: 'Tage'
+hour: 'Stunde'
+hours: 'Stunden'
 minutes: 'DE Minuten'
 seconds: 'DE Sekunden'
 

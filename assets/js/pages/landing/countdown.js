@@ -18,6 +18,12 @@ function countdown() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+    document.getElementsByClassName("countdown-hours")[0].style.display = hours == 1 ? "none"   : "inline";
+    document.getElementsByClassName("countdown-hour")[0].style.display  = hours == 1 ? "inline" : "none";
+
+    document.getElementsByClassName("countdown-days")[0].style.display = days == 1 ? "none"   : "inline";
+    document.getElementsByClassName("countdown-day")[0].style.display  = days == 1 ? "inline" : "none";
+
     // Display the result in the element with id="demo"
     containerRoot.getElementsByClassName("cdays")[0].innerHTML = days;
     containerRoot.getElementsByClassName("chours")[0].innerHTML = hours;
